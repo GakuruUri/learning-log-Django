@@ -19,4 +19,14 @@
 - python manage.py migrate
 - python manage.py runserver
 
-
+# Defining Models
+# Activating models
+- Whenever we modify data that the Learning Log manages we follow these 3 steps:
+    -- modify model.py
+    -- call makemigrations on learning_logs
+    -- Tell Django to migrate the project
+# Migrating the Entry Model
+- Migrate the database as earlier by calling makemigrations on learning_logs
+    -- python manage.py makemigrations learning_logs
+- and run:
+    -- python manage.py migrate
