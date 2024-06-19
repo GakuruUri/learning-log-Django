@@ -5,3 +5,18 @@
   register or log in.
 - Once logged in, a user can create new topics, make new entries and read and
   edit existing entries.
+
+# Creating a project
+- mkdir <name of directory>
+- python -m venv ll_env
+- Activate virtual env: source ll_env/bin/activate
+- pip install --upgrade pip
+- pip install django
+- django-admin startproject ll_project . Don't forget the dot at the end, this dot creates a    directory structure that will make it easy to deploy the app to a server.
+-- the manage.py is a short program that takes in commands and feeds them to the relevant       parts of django
+
+# Creating a database
+- python manage.py migrate
+- python manage.py runserver
+
+
